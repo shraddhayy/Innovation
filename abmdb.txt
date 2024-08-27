@@ -1,0 +1,80 @@
+CREATE TABLE IF NOT EXISTS 'admission'(
+'emailid' varchar(50) NOT NULL,
+'qualification'varchar(100)NOT NULL,
+'courses' varchar(50) NOT NULL,
+'address' varchar(100) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=latine1;
+
+--
+--Dumping data for table 'admission'
+--
+INSERT INTO 'admision' ('emailid','qualification','courses','address') VALUES
+('sanu@123','wed devlopment','bcs','satara'),
+('prajwal@123','wed devlopment','bcs','satara'),
+('prajwal@123','','',''),
+('prajwal@123','','','')
+('prajwal@123','','',''),
+('sanu@123','','',''),
+('sanu@123','','',''),
+
+----------------------------------------------------------------------------------
+
+--Table structure for table 'course'
+--
+
+CREATE TABLE IF NOT EXISTS 'COURSE'(
+'coursename' varchar(50)NOT NULL,
+'duration' varchar(50)NOT NULL,
+'fees' varchar(50)NOT NULL,
+'photo' varchar(100)NOT NULL,
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--Dumping data for table 'course'
+--
+
+INSERT INTO 'course' ('coursename','duration','fees','photo') VALUES
+('c programming','2 months','3000','c.jpg');
+-------------------------------------------------------
+
+--
+--Table structure for table 'feedback'
+--
+
+CREATE TABLE IF NOT EXISTS 'feedback'(
+'emailid' varchar(50)NOT NULL
+'details' varchar(100)NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+--Dumping data for table 'feedback'
+--
+
+INSERT INTO 'feedback'('emailid','details') VALUES
+('sanu@123','satara'),
+('sanu@123','hlo'),
+('sanu@123','satara'),
+----------------------------------------------------------
+
+--
+--Table structure for table 'registration'
+--
+CREATE TABLE IF NOT EXISTS 'registration'(
+'name' varchar(50)NOT NULL,
+'contact' varchar(50)NOT NULL,
+'emailid' varchar(50)NOT NULL,
+'password' varchar(50)NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+--Dumping data for table 'registration'
+--
+
+INSERT INTO 'registration'('name','contact''emailid','password') VALUES
+('esha mane', '2758905648','esha@gmail.com','12345'),
+('dipali','2785370945''abc@gmail.com','123');
+
+
+
+--
+
+INSERT INTO 'feedback'

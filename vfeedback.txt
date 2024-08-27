@@ -1,0 +1,26 @@
+<?php
+include("header.php");
+?>
+<div class="container-fluid">
+<h1 align=center> feedback</h1>
+<hr>
+<table class="table table-bordered">
+<thread>
+<tr>
+<th>
+Email Id </th> <th> Details</th>
+</tr>
+</thread>
+<tbody>
+<?php
+include("../connection.php");
+$rs=mysqli_query($cn,"select* from feedback");
+while($a=mysqli_fetch_array($rs))
+{
+ extract($a);
+echo"<tr><td>$emailid</td><td>$details</td></tr>";
+}
+?>
+</tbody>
+</table>
+</div>

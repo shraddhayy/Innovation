@@ -1,0 +1,15 @@
+<?
+include("header.php");
+?>
+<div class="container">
+<h1 align=center>Manage course here</h1>
+<hr>
+<form method=post enctype="multipart/form-data">
+ <div class="form-group">
+  <label for="name">Course Name:</label>
+  <input type="text" class="form-control" id="name" name="nm">
+</div>
+
+<div class="form-group">
+ <label for="duration">Duration:</label>
+ <input type="text" class="form-control" id="d
